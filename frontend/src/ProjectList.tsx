@@ -11,7 +11,10 @@ function ProjectList() {
 
     useEffect(() => {
         const fetchProjects = async () => {
-            const response = await fetch(`https://localhost:5000/Water/AllProjects?pageSize=${pageSize}&pageNum=${pageNum}`);
+            const response = await fetch(`https://localhost:5000/Water/AllProjects?pageSize=${pageSize}&pageNum=${pageNum}`, 
+            {
+                credentials: "include"
+            });
             const data = await response.json();
             setProjects(data.projects);
             setTotalItems(data.totalNumProjects);
@@ -19,7 +22,7 @@ function ProjectList() {
         }
 
         fetchProjects();
-    }, [pageSize, pageNum, totalItems, totalPages]);
+    }, [pageSize, pageNum]);
 
     return (
         <>

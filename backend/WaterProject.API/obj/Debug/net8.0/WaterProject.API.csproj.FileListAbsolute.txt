@@ -69,3 +69,4 @@ C:\Users\harmo\OneDrive\IS Junior Core\IS 413\WaterProject\backend\WaterProject.
 C:\Users\harmo\OneDrive\IS Junior Core\IS 413\WaterProject\backend\WaterProject.API\obj\Debug\net8.0\WaterProject.API.genruntimeconfig.cache
 C:\Users\harmo\OneDrive\IS Junior Core\IS 413\WaterProject\backend\WaterProject.API\obj\Debug\net8.0\ref\WaterProject.API.dll
 C:\Users\harmo\OneDrive\IS Junior Core\IS 413\WaterProject\backend\WaterProject.API\obj\Debug\net8.0\WaterProject.API.sourcelink.json
+C:\Users\harmo\OneDrive\IS Junior Core\IS 413\WaterProject\backend\WaterProject.API\bin\Debug\net8.0\Microsoft.Extensions.ObjectPool.dll
