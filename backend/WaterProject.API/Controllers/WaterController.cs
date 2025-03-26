@@ -12,25 +12,21 @@ namespace WaterProject.API.Controllers
         public WaterController(WaterDbContext temp) => _waterContext = temp;
 
         [HttpGet("AllProjects")]
-        public IActionResult GetProjects(int pageSize = 5, int pageNum = 1)
+        public IActionResult GetProjects(int pageSize = 5, int pageNum = 1, [FromQuery] List<string> projectTypes = null)
         {
-            string favoriteProjectType = Request.Cookies["favoriteProjectType"];
-            Console.WriteLine(favoriteProjectType);
+            var query = _waterContext.Projects.AsQueryable();
 
-            HttpContext.Response.Cookies.Append("favoriteProjectType", "Borehole Well and Hand Pump", new CookieOptions
+            if (projectTypes != null && projectTypes.Any())
             {
-                HttpOnly = true,
-                Secure = true,
-                SameSite = SameSiteMode.None,
-                Expires = DateTime.Now.AddMinutes(5)
-            });
+                query = query.Where(p => projectTypes.Contains(p.ProjectType));
+            };
 
-            var projectList = _waterContext.Projects
+            var totalNumProjects = query.Count();
+
+            var projectList = query
             .Skip((pageNum-1) * pageSize)
             .Take(pageSize)
             .ToList();
-
-            var totalNumProjects = _waterContext.Projects.Count();
 
             var listAll = new
             {
@@ -40,11 +36,17 @@ namespace WaterProject.API.Controllers
 
             return Ok(listAll);
         }
-        [HttpGet("FunctionalProjects")]
-        public IEnumerable<Project> GetFunctionalProjects()
+
+        [HttpGet("GetProjectTypes")]
+        public IActionResult GetProjectTypes()
         {
-            var functionalList = _waterContext.Projects.Where(p => p.ProjectFunctionalityStatus == "Functional").ToList();
-            return functionalList;
+            var projectTypes = _waterContext.Projects
+                .Select(p => p.ProjectType)
+                .Distinct()
+                .ToList();
+
+            return Ok(projectTypes);
         }
+
     }
 }
