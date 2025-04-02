@@ -18,7 +18,7 @@ builder.Services.AddCors(options =>
     options.AddPolicy("AllowFrontend",
         policy =>
         {
-            policy.WithOrigins("https://green-tree-0ae2fb01e.6.azurestaticapps.net")
+            policy.WithOrigins("https://green-tree-0ae2fb01e.6.azurestaticapps.net/")
                 .AllowCredentials()
                 .AllowAnyHeader()
                 .AllowAnyMethod();

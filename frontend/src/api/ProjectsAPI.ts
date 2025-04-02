@@ -5,7 +5,7 @@ interface FetchProjectsResponse {
     totalNumProjects: number;
 }
 
-const API_URL = 'https://waterproject-htayler-backend.azurewebsites.net/Water'
+const API_URL = 'https://waterproject-htayler-backend.azurewebsites.net/Water';
 
 export const fetchProjects = async (
     pageSize: number,
@@ -14,19 +14,21 @@ export const fetchProjects = async (
 ): Promise<FetchProjectsResponse> => {
     try {
         const categoryParams = selectedCategories
-        .map((cat) => `projectTypes=${encodeURIComponent(cat)}`)
-        .join('&');
-    
-    const response = await fetch(`${API_URL}/AllProjects?pageSize=${pageSize}&pageNum=${pageNum}${selectedCategories.length ? `&${categoryParams}` : ``}`, 
-    {
-        credentials: "include"
-    });
+            .map((cat) => `projectTypes=${encodeURIComponent(cat)}`)
+            .join('&');
 
-    if (!response.ok) {
-        throw new Error("Failed to fetch projects");
-    }
-    
-    return await response.json();
+        const response = await fetch(
+            `${API_URL}/AllProjects?pageSize=${pageSize}&pageNum=${pageNum}${selectedCategories.length ? `&${categoryParams}` : ''}`, 
+            {
+                credentials: "include" // Include credentials
+            }
+        );
+
+        if (!response.ok) {
+            throw new Error("Failed to fetch projects");
+        }
+
+        return await response.json();
     } catch (error) {
         console.error("Error fetching projects:", error);
         throw error;
@@ -40,28 +42,35 @@ export const addProject = async (newProject: Project): Promise<Project> => {
             headers: {
                 "Content-type": "application/json",
             },
+            credentials: "include", // Include credentials
             body: JSON.stringify(newProject)
         });
-            if (!response.ok) {
-                throw new Error("Failed to add project");
-            }
 
-            return await response.json();
+        if (!response.ok) {
+            throw new Error("Failed to add project");
+        }
+
+        return await response.json();
     } catch (error) {
         console.error("Error adding project", error);
         throw error;
     }
 };
 
-export const updateProject = async (projectId: number, updatedProject: Project) : Promise<Project> => {
+export const updateProject = async (projectId: number, updatedProject: Project): Promise<Project> => {
     try {
         const response = await fetch(`${API_URL}/UpdateProject/${projectId}`, {
             method: "PUT",
             headers: {
                 "Content-type": "application/json",
             },
+            credentials: "include", // Include credentials
             body: JSON.stringify(updatedProject)
         });
+
+        if (!response.ok) {
+            throw new Error("Failed to update project");
+        }
 
         return await response.json();
     } catch (error) {
@@ -72,11 +81,10 @@ export const updateProject = async (projectId: number, updatedProject: Project) 
 
 export const deleteProject = async (projectId: number): Promise<void> => {
     try {
-        const response = await fetch(`${API_URL}/DeleteProject/${projectId}`,
-            {
-                method: "DELETE"
-            }
-        );
+        const response = await fetch(`${API_URL}/DeleteProject/${projectId}`, {
+            method: "DELETE",
+            credentials: "include", // Include credentials
+        });
 
         if (!response.ok) {
             throw new Error("Failed to delete project");
@@ -85,4 +93,4 @@ export const deleteProject = async (projectId: number): Promise<void> => {
         console.error("Error deleting project:", error);
         throw error;
     }
-}
+};
