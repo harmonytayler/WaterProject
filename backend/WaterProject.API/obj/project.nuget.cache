@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4XV3Wb7rloc=",
+  "dgSpecHash": "P0NsFGAYefg=",
   "success": true,
-  "projectFilePath": "C:\\Users\\harmo\\OneDrive\\IS Junior Core\\IS 413\\WaterProject\\backend\\WaterProject.API\\WaterProject.API.csproj",
+  "projectFilePath": "C:\\Users\\harmo\\OneDrive\\Information Systems\\IS 413\\WaterProject\\backend\\WaterProject.API\\WaterProject.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\harmo\\.nuget\\packages\\microsoft.aspnetcore.http\\2.3.0\\microsoft.aspnetcore.http.2.3.0.nupkg.sha512",
     "C:\\Users\\harmo\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.3.0\\microsoft.aspnetcore.http.abstractions.2.3.0.nupkg.sha512",

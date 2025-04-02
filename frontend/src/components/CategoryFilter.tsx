@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "./CategoryFilter.css"
+import "./css/CategoryFilter.css"
 
 function CategoryFilter ({
     selectedCategories,
@@ -36,7 +36,7 @@ function CategoryFilter ({
     return (
         <>
             <div className="category-filter">
-                <h1>Project Types</h1>
+                <h3>Project Types</h3>
                 <div className="category-list">
                     {categories.map((c) => (
                         <div key={c} className="category-item">

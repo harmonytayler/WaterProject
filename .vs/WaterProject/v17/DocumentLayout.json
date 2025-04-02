@@ -1,10 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\harmo\\OneDrive\\IS Junior Core\\IS 413\\WaterProject\\",
+  "WorkspaceRootPath": "C:\\Users\\harmo\\OneDrive\\Information Systems\\IS 413\\WaterProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{215099A0-ECC5-D47A-8CC1-484D302D864E}|backend\\WaterProject.API\\WaterProject.API.csproj|c:\\users\\harmo\\onedrive\\is junior core\\is 413\\waterproject\\backend\\waterproject.api\\controllers\\watercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{215099A0-ECC5-D47A-8CC1-484D302D864E}|backend\\WaterProject.API\\WaterProject.API.csproj|c:\\users\\harmo\\onedrive\\information systems\\is 413\\waterproject\\backend\\waterproject.api\\controllers\\watercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{215099A0-ECC5-D47A-8CC1-484D302D864E}|backend\\WaterProject.API\\WaterProject.API.csproj|solutionrelative:backend\\waterproject.api\\controllers\\watercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{215099A0-ECC5-D47A-8CC1-484D302D864E}|backend\\WaterProject.API\\WaterProject.API.csproj|c:\\users\\harmo\\onedrive\\information systems\\is 413\\waterproject\\backend\\waterproject.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{215099A0-ECC5-D47A-8CC1-484D302D864E}|backend\\WaterProject.API\\WaterProject.API.csproj|solutionrelative:backend\\waterproject.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,13 +26,25 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\harmo\\OneDrive\\Information Systems\\IS 413\\WaterProject\\backend\\WaterProject.API\\Program.cs",
+              "RelativeDocumentMoniker": "backend\\WaterProject.API\\Program.cs",
+              "ToolTip": "C:\\Users\\harmo\\OneDrive\\Information Systems\\IS 413\\WaterProject\\backend\\WaterProject.API\\Program.cs",
+              "RelativeToolTip": "backend\\WaterProject.API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T16:13:18.252Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "WaterController.cs",
-              "DocumentMoniker": "C:\\Users\\harmo\\OneDrive\\IS Junior Core\\IS 413\\WaterProject\\backend\\WaterProject.API\\Controllers\\WaterController.cs",
+              "DocumentMoniker": "C:\\Users\\harmo\\OneDrive\\Information Systems\\IS 413\\WaterProject\\backend\\WaterProject.API\\Controllers\\WaterController.cs",
               "RelativeDocumentMoniker": "backend\\WaterProject.API\\Controllers\\WaterController.cs",
-              "ToolTip": "C:\\Users\\harmo\\OneDrive\\IS Junior Core\\IS 413\\WaterProject\\backend\\WaterProject.API\\Controllers\\WaterController.cs",
+              "ToolTip": "C:\\Users\\harmo\\OneDrive\\Information Systems\\IS 413\\WaterProject\\backend\\WaterProject.API\\Controllers\\WaterController.cs",
               "RelativeToolTip": "backend\\WaterProject.API\\Controllers\\WaterController.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBUAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAAYwDoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-19T18:26:30.772Z",
               "EditorCaption": ""
