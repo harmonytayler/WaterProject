@@ -142,3 +142,4 @@ C:\Users\harmo\OneDrive\Information Systems\IS 413\WaterProject\backend\WaterPro
 C:\Users\harmo\OneDrive\Information Systems\IS 413\WaterProject\backend\WaterProject.API\obj\Debug\net8.0\WaterProject.API.pdb
 C:\Users\harmo\OneDrive\Information Systems\IS 413\WaterProject\backend\WaterProject.API\obj\Debug\net8.0\WaterProject.API.genruntimeconfig.cache
 C:\Users\harmo\OneDrive\Information Systems\IS 413\WaterProject\backend\WaterProject.API\obj\Debug\net8.0\ref\WaterProject.API.dll
+C:\Users\harmo\OneDrive\Information Systems\IS 413\WaterProject\backend\WaterProject.API\bin\Debug\net8.0\WaterProject.sqlite
